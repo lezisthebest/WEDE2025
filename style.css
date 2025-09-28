@@ -1,0 +1,111 @@
+ /* Reset for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General body settings */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fafafa;
+  color: #000;
+}
+ h1, h2, h3 {
+  font-family: "Georgia", serif;
+  margin-bottom: 10px;
+}
+
+p, li {
+  font-size: 1rem;
+}
+ header {
+  background: #C25B00;  /* Darker orange for better contrast */
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: #5A3921;  /* Rooibos brown */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+ form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* Focus styles for accessibility */
+input:focus, textarea:focus, select:focus, button:focus {
+  outline: 2px solid #E88D2D;
+  outline-offset: 2px;
+  border-color: #E88D2D;
+}
+
+button {
+  background: #E88D2D;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5A3921;
+}
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  body {
+    font-size: 0.95rem;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
